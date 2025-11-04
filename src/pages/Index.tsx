@@ -1,11 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
 
 const Index = () => {
-  const [showAll, setShowAll] = useState(false);
   const poems = [
     {
       title: "Везение",
@@ -159,10 +156,10 @@ const Index = () => {
           </div>
 
           <div className="space-y-8">
-            {poems.slice(0, showAll ? poems.length : 3).map((poem, index) => (
+            {poems.map((poem, index) => (
               <Card 
                 key={index} 
-                className="p-8 md:p-12 bg-card border-2 border-primary/10 shadow-lg hover:shadow-xl transition-shadow animate-fade-in"
+                className="p-8 md:p-12 bg-card border-2 border-primary/10 shadow-lg hover:shadow-xl transition-shadow"
               >
                 <h3 className="text-3xl font-bold text-primary mb-6 text-center">
                   {poem.title}
@@ -177,19 +174,6 @@ const Index = () => {
               </Card>
             ))}
           </div>
-
-          {poems.length > 3 && (
-            <div className="mt-12 text-center">
-              <Button 
-                onClick={() => setShowAll(!showAll)}
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg"
-              >
-                <Icon name={showAll ? "ChevronUp" : "ChevronDown"} className="mr-2" size={24} />
-                {showAll ? "Скрыть стихотворения" : `Показать все стихотворения (${poems.length})`}
-              </Button>
-            </div>
-          )}
         </section>
 
         <footer className="mt-20 text-center text-muted-foreground">
