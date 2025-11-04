@@ -176,9 +176,14 @@ const Index = () => {
           </div>
         </section>
 
-        <footer className="mt-20 text-center text-muted-foreground">
+        <footer className="mt-20 text-center">
           <Separator className="mb-8 bg-accent/30" />
-          <p className="text-sm">
+          <Card className="p-8 bg-secondary/30 border-2 border-primary/10 mb-8">
+            <p className="text-lg leading-relaxed text-foreground">
+              Остальные стихотворения можно будет прочитать в сборниках стихотворений Зубковой Татьяны, этот сборник сделала внучка писательницы — <span className="font-semibold">Анисимова Анна</span>.
+            </p>
+          </Card>
+          <p className="text-sm text-muted-foreground">
             © 2024 Зубкова Татьяна Михайловна. Все права защищены.
           </p>
         </footer>
