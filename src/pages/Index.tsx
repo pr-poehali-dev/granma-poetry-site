@@ -70,7 +70,7 @@ const Index = () => {
         <header className="text-center mb-16 animate-fade-in">
           <div className="mb-8">
             <img 
-              src="https://cdn.poehali.dev/projects/066955d6-d702-407b-a855-c4d8a65be790/files/c78bb862-cdfc-4c51-852d-1cf324b3a546.jpg"
+              src="https://cdn.poehali.dev/files/2d1f4567-2bbe-484e-af31-e4b6cb1a3083.jpg"
               alt="Зубкова Татьяна Михайловна"
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-primary/20 shadow-lg"
             />
